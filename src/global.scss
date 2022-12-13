@@ -1,0 +1,12 @@
+$mainColor: #35fa1f;
+$backgroundColor: radial-gradient(77.68% 99.41% at 50% 50%, #B15566 24.48%, rgba(244, 22, 8, 0) 100%);
+
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}){
+        @content
+    }
+}
+

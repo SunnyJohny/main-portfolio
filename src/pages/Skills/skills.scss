@@ -1,0 +1,214 @@
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+@import "../../global.scss";
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 70px;
+
+  width: 100%;
+  height: 800px;
+  background: #ffdee4;
+
+  padding: 0px 0px;
+
+  border-radius: 7px;
+  @include mobile {
+    padding-bottom: 10px;
+    height: 750px;
+  }
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+
+    .Line {
+      height: 30px;
+
+      transform: rotate(90deg);
+      border: 2px solid;
+
+      color: $mainColor;
+      margin-right: 20px;
+    }
+  }
+  .skillsBoxContainer {
+    width: 60%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    overflow-y: visible;
+    @include mobile {
+      overflow-y: hidden;
+
+      height: 100%;
+    }
+  }
+  .skill-box {
+    width: 100%;
+    height: 60px;
+    margin: 5px 0;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+    .title {
+      display: block;
+      font-size: 14px;
+      font-weight: 600;
+      color: #333;
+    }
+    .skill-bar {
+      // position: relative;
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      // justify-items: center;
+      height: 20px;
+      width: 100%;
+      border-radius: 6px;
+      margin-top: 6px;
+      background: rgba(11, 109, 245, 0.185);
+      .skill-per {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+
+        // position: relative;
+        display: block;
+        height: 100%;
+        // border-radius: 6px;
+        background: rgb(162, 250, 145);
+        animation: progress 0.4s ease-in-out forwards;
+        opacity: 0;
+
+        .html {
+          width: 95%;
+          animation: progress 0.4s ease-in-out forwards;
+          opacity: 0;
+          animation-delay: 0.1s;
+        }
+        .css {
+          width: 65%;
+          animation-delay: 0.1s;
+        }
+        .JS {
+          width: 80%;
+          animation-delay: 0.1s;
+        }
+        .react {
+          width: 85%;
+          animation-delay: 0.1s;
+        }
+        .scss {
+          width: 60%;
+          animation-delay: 0.1s;
+        }
+        .mysql {
+          width: 65%;
+          animation-delay: 0.1s;
+        }
+        .firebase {
+          width: 80%;
+          animation-delay: 0.1s;
+        }
+        .sqlite {
+          width: 90%;
+          animation-delay: 0.1s;
+        }
+        .java {
+          width: 50%;
+          animation-delay: 0.1s;
+        }
+        .figma {
+          width: 55%;
+          animation-delay: 0.1s;
+          transition: all;
+        }
+        .git {
+          width: 85%;
+          animation-delay: 0.1s;
+          transition: all;
+        }
+        @keyframes progress {
+          0% {
+            width: 0;
+            opacity: 1;
+          }
+
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+
+      b {
+        // position: relative;
+        width: 100%;
+        display: flex;
+        background: rgb(0, 7, 2);
+        // align-items: center;
+        // justify-items: center;
+        justify-content: center;
+        color: #ffdee4;
+        font-size: medium;
+      }
+    }
+  }
+}
+
+.skill-per.javascript {
+  width: 60%;
+  animation-delay: 0.2s;
+}
+.skill-per.nodejs {
+  width: 40%;
+  animation-delay: 0.3s;
+}
+.skill-per.reactjs {
+  width: 70%;
+  animation-delay: 0.3s;
+}
+.skill-per.expressjs {
+  width: 75%;
+  animation-delay: 0.3s;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-per .tooltip {
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: crimson;
+  z-index: 1;
+}
+
+.tooltip::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  background-color: crimson;
+  transform: translateX(-50%) rotate(45deg);
+}

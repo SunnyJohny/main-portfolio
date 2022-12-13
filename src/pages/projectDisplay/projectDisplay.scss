@@ -1,0 +1,151 @@
+@import "../../global.scss";
+
+.projectDisplay{
+  position: relative;
+   margin-top: 70px;
+//   padding: 0px 120px;
+  background-color: hsl(349, 100%, 94%);
+  width: 100%;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0px; 
+
+  
+ 
+
+  .title {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   .Line {
+     height: 50px;
+
+     transform: rotate(90deg);
+     border: 2px solid;
+
+     color: $mainColor;
+     margin-right: 30px;
+   }
+ }
+
+
+
+  .rowContainer{
+   display: flex;
+  //  height: 30%;
+   width:  100%;
+   gap: 55px;
+   // flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   justify-items: center;
+   // flex-wrap: wrap;
+   @include mobile {
+      padding: 10px 0px; 
+      // overflow-y: scroll;
+    }
+  
+   .serviceContaer{
+  background-color: #ffffff;
+// margin: 10px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      // border-style: dotted 2px black;
+      height: 90vh;
+      width: 70%;
+      // background-color: green;
+      border: 1px solid rgb(7, 0, 27);
+      border-radius: 20px;
+      @include mobile {
+        //  overflow: scroll;
+         height: 100vh;
+        display: flex;
+        padding: 20px 0;
+        width: 300px;
+      
+justify-content: flex-start;
+      //   margin-bottom: 50%;
+        .Links{
+         overflow: hidden;
+        }
+        .tech{
+         padding: 0 15px;
+         overflow: hidden;
+       
+
+      }
+      h3{
+       
+         overflow: hidden;
+ 
+        }
+        }
+
+     
+      .iconContainer{
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         justify-items: center;
+         background-color: rgb(1, 1, 65);
+         border-radius:20px;
+         height: 300px;
+         width: 80%;
+         scroll-behavior: none;
+         overflow: hidden;
+      }
+      .serviceType{
+         display: flex;
+         flex-direction: column;
+
+         align-items: center;
+         h1{
+            margin: 10px 0;
+         overflow: hidden;
+
+         }
+         p{
+            padding: 20px;
+            overflow: hidden;
+         }
+      
+
+      }
+    
+
+      .site{
+         // padding: 0 15px;
+         overflow: hidden;
+       
+
+      }
+       a{
+        text-decoration: none;
+        height:20px;
+      cursor: pointer;
+      overflow: hidden;
+      @include mobile {
+      overflow: hidden;
+
+      }
+
+       }
+       h3{
+        display: flex;
+        justify-items: center;
+        overflow: hidden;
+
+      
+        column-gap: 10px;
+       }
+
+   }
+  }
+}
