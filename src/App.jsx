@@ -27,15 +27,11 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
-
-
-{/* <Hamburger toggled={isOpen} toggle={setOpen} /> */}
-
 function App() {
  
   
 const [isOpen, setOpen] = useState(true)
-console.log(isOpen)
+
 
   const [menuOpen,setMenuOpen] = useState(false)
   return (
@@ -44,7 +40,7 @@ console.log(isOpen)
 
      <Router>
      <ToastContainer /> 
-{/* <Hamburger toggled={isOpen} toggle={setOpen} /> */}
+
 
      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}
      isOpen={isOpen} setOpen={isOpen}

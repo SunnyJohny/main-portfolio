@@ -1,12 +1,12 @@
 import { useState } from "react";
 // import ContactPhoneIcon from "@material-ui/icons/ContactPhone";
-import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
 // import EmailIcon from "@material-ui/icons/Email";
-import EmailIcon from '@mui/icons-material/Email';
+import EmailIcon from "@mui/icons-material/Email";
 // import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import emailjs from "@emailjs/browser";
-import {  toast } from 'react-toastify';
+import { toast } from "react-toastify";
 // import 'react-toastify/dist/ReactToastify.css';
 
 import { useRef } from "react";
@@ -14,34 +14,30 @@ import { useRef } from "react";
 import "./contact.scss";
 
 export default function Contact() {
-  // toast.success("welcom")
-
-  
   const form = useRef();
-  console.log(form);
+  // console.log(process.env.REACT_APP_EMAILSERICE_KEY);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     emailjs
       .sendForm(
-        "service_1htbs7f",
+        process.env.REACT_APP_EMAILSERICE_KEY,
         "template_2hgv8sp",
         form.current,
         "6UfHuLSCvF132R-1l"
       )
       .then(
         (result) => {
-          form.current.reset()
+          form.current.reset();
 
-          toast.success("Message Recieved Thanks")
+          toast.success("Message Recieved Thanks");
         },
         (error) => {
-           toast.error("Message Not Sent please try again")
-        console.log(error.text);
-        }     
+          toast.error("Message Not Sent please try again");
+          console.log(error.text);
+        }
       );
-    
   };
 
   return (
@@ -50,8 +46,8 @@ export default function Contact() {
         <h3 className="Line"></h3> <h2 className="textTitle">Contact Me</h2>
       </div>
       <div className="container" id="container">
-      <h4 className="inTouch">Get in touch</h4>
-  
+        <h4 className="inTouch">Get in touch</h4>
+
         <div className="left">
           <div className="socials">
             <PhoneEnabledIcon style={{ fontSize: "40px", color: "#1DFC5C" }} />
@@ -79,26 +75,17 @@ export default function Contact() {
           </a>
         </div>
         <div className="right">
-           <h4>Message Me</h4>
-          <form onSubmit={handleSubmit} ref={form} >
-            <input
-              type="text"
-              placeholder="Name"
-              name="userName"
-               required
+          <h4>Message Me</h4>
+          <form onSubmit={handleSubmit} ref={form}>
+            <input type="text" placeholder="Name" name="userName" required />
+            <input type="text" placeholder="Email" name="userEmail" required />
 
-            />
-            <input type="text"
-             placeholder="Email" 
-             name="userEmail"
-             required
-             />
-
-            <textarea placeholder="Message" 
-             name="message"
-             cols="30"
-             rows="10"
-              ></textarea>
+            <textarea
+              placeholder="Message"
+              name="message"
+              cols="30"
+              rows="10"
+            ></textarea>
             <button type="submit">Send</button>
             {/* {message && <span>Thanks, I'll reply ASAP :)</span>} */}
           </form>
