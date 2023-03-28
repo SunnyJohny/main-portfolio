@@ -1,21 +1,19 @@
-import { useState } from "react";
-// import ContactPhoneIcon from "@material-ui/icons/ContactPhone";
 import PhoneEnabledIcon from "@mui/icons-material/PhoneEnabled";
-// import EmailIcon from "@material-ui/icons/Email";
+
 import EmailIcon from "@mui/icons-material/Email";
-// import LinkedInIcon from "@material-ui/icons/LinkedIn";
+
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
-// import 'react-toastify/dist/ReactToastify.css';
 
 import { useRef } from "react";
-// import watsapp from "assets/whatsapp.png"
+
 import "./contact.scss";
 
 export default function Contact() {
+
   const form = useRef();
-  // console.log(process.env.REACT_APP_EMAILSERICE_KEY);
+  console.log(form);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -43,15 +41,15 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="title">
-        <h3 className="Line"></h3> <h2 className="textTitle">Contact Me</h2>
+       <div className="Line"></div> <h2 className="textTitle ">Contact Me</h2>
       </div>
       <div className="container" id="container">
-        <h4 className="inTouch">Get in touch</h4>
-
         <div className="left">
+          {/* <h4 className="inTouch">Get in touch</h4> */}
+
           <div className="socials">
             <PhoneEnabledIcon style={{ fontSize: "40px", color: "#1DFC5C" }} />
-            <b>+1238030611606</b>
+            <b>+2348030611606</b>
           </div>
           <a
             class="socials"
@@ -87,7 +85,9 @@ export default function Contact() {
               rows="10"
             ></textarea>
             <button type="submit">Send</button>
-            {/* {message && <span>Thanks, I'll reply ASAP :)</span>} */}
+            {/* <button className="hire" ><span >Hire me</span> </button> */}
+
+           
           </form>
         </div>
       </div>

@@ -15,7 +15,7 @@ import WorkIcon  from '@mui/icons-material/Work';
 function Resume() {
   return (
     <div className="resumeContainer">
-     <div className="title"><h3 className="Line"></h3> <h2 className="textTitle">My Resume</h2></div>
+     <div className="title"><div className="Line"></div> <h2 className="textTitle">My Resume</h2></div>
     
     <div className="experience">
       <VerticalTimeline lineColor=" rgba(0, 0, 0, 0.582)">

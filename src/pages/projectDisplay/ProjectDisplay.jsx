@@ -1,21 +1,31 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-
+// import Notiflix from "notiflix";
+import { Report } from 'notiflix/build/notiflix-report-aio';
 import { featuredPortfolio } from "../../data";
 
 // import LinkIcon from "@material-ui/icons/Link";
 import LinkIcon from "@mui/icons-material/Link";
 // import LinkIcon from '@mui/icons-material/Link';
 
+
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 import "./projectDisplay.scss";
 function ProjectDisplay({ project }) {
+
   const { id } = useParams();
   project = featuredPortfolio[id];
   const nothing = "";
 
-  console.log(project);
+ 
+ 
+  const goToContact = () => {
+ 
+   alert('Please You will want to Contact me, if you need to access to my Github Repository Thank You.');
+
+  }
+  
   return (
     <div className="projectDisplay">
       <div className="title">
@@ -49,13 +59,15 @@ function ProjectDisplay({ project }) {
               </h3>
             </a>
             <a
+            onClick={goToContact}
               class="social-icon-link github"
-              href={project.GitHub}
+              // href={project.GitHub}
+              href="/contact"
               target="_blank"
               rel="noreferrer"
               aria-label="Github"
             >
-              <h3>
+              <h3 >
                 GitHub:
                 <GitHubIcon  />
               </h3>

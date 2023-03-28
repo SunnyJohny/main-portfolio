@@ -1,9 +1,6 @@
 import "./menu.scss";
-import { useState } from "react";
+
 import {  NavLink } from "react-router-dom";
-import { Divide as Hamburger } from 'hamburger-react'
-
-
 export default function Menu({ menuOpen, setMenuOpen, isOpen, setOpen }) {
  setOpen = setOpen('true');
  console.log(isOpen);
@@ -32,7 +29,7 @@ export default function Menu({ menuOpen, setMenuOpen, isOpen, setOpen }) {
          Skills
         </NavLink>
         </li>
-        <li>
+        <li onClick={()=>setMenuOpen(false)}>
         <NavLink to="/projects" activeClassName="active">
          Projects
         </NavLink>

@@ -66,8 +66,6 @@ function Navbar() {
             <div className="menu">
            <MenuIcon /> 
            </div>
-
-
     </div>
   );
 }
