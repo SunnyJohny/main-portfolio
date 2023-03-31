@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import PortfolioList from "../portfolioList/PortfolioList";
+
+
 import "./projects.scss";
 import {
   featuredPortfolio,
@@ -19,7 +20,7 @@ export default function Projects() {
 
   return (
     <div className="portfolio" id="portfolio">
-      <div className="title"><h3 className="Line"></h3> <h2 className="textTitle">My Projects</h2></div>
+      <div className="title"><h3 className="Line">{}</h3> <h2 className="textTitle">My Projects</h2></div>
       
       <div className="container">
         {data.map((project, id) => {
