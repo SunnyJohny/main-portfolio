@@ -12,12 +12,12 @@ export const featuredPortfolio = [
   },
   {
     id: 2,
-    title: "Tech Blog Site",
+    title: "Retaurant Landing Page",
     img: "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
-    technologies: " Redux Toolkit,Google Firbase FireStore,React js",
-    desc: "News Blog Site ",
+    technologies: "React js,Material UI,Bootstrap,",
+    desc: "A simple Retaurant Landing Page",
 
-    Link: "",
+    Link: "https://teaplusrestaurantlandingpage.netlify.app",
     GitHub: "https://github.com",
   },
   {
