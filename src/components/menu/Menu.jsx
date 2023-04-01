@@ -1,47 +1,42 @@
 import "./menu.scss";
 
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 export default function Menu({ menuOpen, setMenuOpen, isOpen, setOpen }) {
- setOpen = setOpen('true');
- console.log(isOpen);
+  setOpen = setOpen(true);
 
   return (
-    <div className={"menu "+(menuOpen && "active")}>
+    <div className={"menu " + (menuOpen && "active")}>
       <ul>
-        <li onClick={()=>setMenuOpen(false)}>
-          
-          <NavLink to="/" activeClassName="active">
-          Home
-                </NavLink>
+        <li onClick={() => setMenuOpen(false)}>
+          <NavLink to="/" activeclassname="active">
+            Home
+          </NavLink>
         </li>
-        <li onClick={()=>setMenuOpen(false)}>
-        <NavLink to="/resume" activeClassName="active">
-          Resume
-                </NavLink>
+        <li onClick={() => setMenuOpen(false)}>
+          <NavLink to="/resume" activeclassname="active">
+            Resume
+          </NavLink>
         </li>
-        <li onClick={()=>setMenuOpen(false)}>
-        <NavLink to="/services" activeClassName="active">
-         Services
-         </NavLink>
+        <li onClick={() => setMenuOpen(false)}>
+          <NavLink to="/services" activeclassname="active">
+            Services
+          </NavLink>
         </li>
-        <li onClick={()=>setMenuOpen(false)}>
-        <NavLink to="/skills" activeClassName="active">
-         Skills
-        </NavLink>
+        <li onClick={() => setMenuOpen(false)}>
+          <NavLink to="/skills" activeclassname="active">
+            Skills
+          </NavLink>
         </li>
-        <li onClick={()=>setMenuOpen(false)}>
-        <NavLink to="/projects" activeClassName="active">
-         Projects
-        </NavLink>
+        <li onClick={() => setMenuOpen(false)}>
+          <NavLink to="/projects" activeclassname="active">
+            Projects
+          </NavLink>
         </li>
-        <li onClick={()=>setMenuOpen(false)}>
-        <NavLink to="/contact" activeClassName="active">
-          Contact
-                </NavLink>
+        <li onClick={() => setMenuOpen(false)}>
+          <NavLink to="/contact" activeclassname="active">
+            Contact
+          </NavLink>
         </li>
-
-      
-       
       </ul>
     </div>
   );

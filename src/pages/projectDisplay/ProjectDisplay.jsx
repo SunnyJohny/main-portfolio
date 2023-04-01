@@ -1,10 +1,13 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+// import Notiflix from "notiflix";
+
 import { featuredPortfolio } from "../../data";
 
 import LinkIcon from "@mui/icons-material/Link";
-// import LinkIcon from '@mui/icons-material/Link';
+
 import GitHubIcon from "@mui/icons-material/GitHub";
+
 import "./projectDisplay.scss";
 function ProjectDisplay({ project }) {
   const { id } = useParams();

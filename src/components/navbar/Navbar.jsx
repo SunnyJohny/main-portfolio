@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import { Link, useLocation, NavLink } from "react-router-dom";
+import {  useLocation, NavLink } from "react-router-dom";
 // import MenuIcon from '@mui/icons-material/Menu';
 import "./Navbar.scss";
 // import "./portfolioList.scss";
 import MenuIcon  from "@material-ui/icons/Menu";
 
 
-// const activeLink = ({ isActive }) => (isActive ? activeClassName="active"  : "");
+// const activeLink = ({ isActive }) => (isActive ? activeclassname="active"  : "");
 
 function Navbar() {
   const [expandNavbar, setExpandNavbar] = useState(false);
@@ -31,34 +31,34 @@ function Navbar() {
            <ul className="links">
              
               <li>
-                <NavLink to="/" activeClassName="active" >
+              <NavLink to="/" activeclassname="active">
                   Home
                 </NavLink>
               </li>
              
               <li>
-                <NavLink to="/resume" activeClassName="active">
+                <NavLink to="/resume" activeclassname="active">
                 Resume
                 </NavLink>
               </li>
                <li>
-                <NavLink to="/services" activeClassName="active">
+                <NavLink to="/services" activeclassname="active">
                  Services
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/skills" activeClassName="active">
+                <NavLink to="/skills" activeclassname="active">
                 Skills
                 </NavLink>
               </li>
               <li>
-                <NavLink  to="/portfolio" activeClassName="active">
+                <NavLink  to="/portfolio" activeclassname="active">
                  Project
                 </NavLink>
               </li>
               
               <li>
-                <NavLink to="/contact" activeClassName="active">
+                <NavLink to="/contact" activeclassname="active">
                   Contact
                 </NavLink>
               </li>

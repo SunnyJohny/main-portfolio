@@ -28,12 +28,13 @@ function App() {
       <Router>
         <ToastContainer />
 
-        <Topbar
-          menuOpen={menuOpen}
-          setMenuOpen={setMenuOpen}
-          isOpen={isOpen}
-          setOpen={isOpen}
-        />
+<Topbar
+  menuOpen={menuOpen}
+  setMenuOpen={setMenuOpen}
+  isOpen={isOpen}
+  setOpen={setOpen} // change here
+/>
+
         <Menu
           menuOpen={menuOpen}
           setMenuOpen={setMenuOpen}

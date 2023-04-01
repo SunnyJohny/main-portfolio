@@ -11,9 +11,7 @@ import { useRef } from "react";
 import "./contact.scss";
 
 export default function Contact() {
-
   const form = useRef();
-  console.log(form);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -41,7 +39,7 @@ export default function Contact() {
   return (
     <div className="contact" id="contact">
       <div className="title">
-       <div className="Line"></div> <h2 className="textTitle ">Contact Me</h2>
+        <div className="Line"></div> <h2 className="textTitle ">Contact Me</h2>
       </div>
       <div className="container" id="container">
         <div className="left">
@@ -52,7 +50,7 @@ export default function Contact() {
             <b>+2348030611606</b>
           </div>
           <a
-            class="socials"
+            className="socials"
             href="mailto:johnsunday803@gmail.com"
             target="_blank"
             rel="noreferrer"
@@ -62,7 +60,7 @@ export default function Contact() {
             <b>johnsunday803@gmail.com</b>
           </a>
           <a
-            class="socials"
+            className="socials"
             href="https://www.linkedin.com/in/john-sunday-193b069b"
             target="_blank"
             rel="noreferrer"
@@ -86,8 +84,6 @@ export default function Contact() {
             ></textarea>
             <button type="submit">Send</button>
             {/* <button className="hire" ><span >Hire me</span> </button> */}
-
-           
           </form>
         </div>
       </div>
