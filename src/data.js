@@ -48,26 +48,11 @@ export const featuredPortfolio = [
     technologies: " Html,scss,React js",
     desc: "Simply a full description of all my skills and experiences",
 
-    Link: "",
-    GitHub: "https://github.com",
+    Link: "https://sunnydevzjohnny.netlify.app",
+    GitHub: "https://github.com/SunnyJohny/main-portfolio.git",
   },
-  // {
-  //   id: 6,
-  //   title: "Game",
-  //   img:
-  //     "https://cdn.dribbble.com/users/5031392/screenshots/15467520/media/c36b3b15b25b1e190d081abdbbf947cf.png?compress=1&resize=1200x900",
-  //     technologies:" Redux Toolkit,Google Firbase FireStore,React js.",
-  //  desc: "I developed this Furniture Ecommerce Full Stack Web Site Project for a Client where are orders for funitures placed and delivered, you can check it out by clicking on the link below " ,
-
-  //     Link:"https://www.w3schools.com/",
-  //   GitHub: "https://github.com",
-
-  // },
 ];
 
-// import Blog from "assets/Blog.png"
-
-// const img  = <ComputerIcon/>
 export const servicesData = [
   {
     id: 1,
