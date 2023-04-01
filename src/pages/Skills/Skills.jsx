@@ -5,7 +5,7 @@ import "./skills.scss";
 function Skills () {
    return (
        <div className="skillsContainer">
-            <div className="title"><h3 className="Line"></h3> <h2 className="textTitle">My Skills</h2></div>
+            <div className="title"><div className="Line"></div> <h2 className="textTitle">My Skills</h2></div>
              <div className="skillsBoxContainer">
            <div className="skill-box">
                <span className="title">HTML</span>
