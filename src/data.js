@@ -14,7 +14,7 @@ export const featuredPortfolio = [
     id: 2,
     title: "Retaurant Landing Page",
     img: "https://cdn.dribbble.com/users/702789/screenshots/15054318/media/4ea5d492b7b07eebc9528ff960794879.png?compress=1&resize=1200x900",
-    technologies: "React js,Material UI,Bootstrap,",
+    technologies: "React js,Material UI,Bootstrap,css.",
     desc: "A simple Retaurant Landing Page",
 
     Link: "https://teaplusrestaurantlandingpage.netlify.app",
