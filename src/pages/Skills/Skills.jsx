@@ -52,7 +52,7 @@ function Skills () {
                <span className="title">MYSQL</span>
                <div className="skill-bar">
                    <span className="skill-per">
-                       <b className="mysql">65%</b>
+                       <b className="mysql">70%</b>
                    </span>
                </div>
            </div>
@@ -87,7 +87,7 @@ function Skills () {
                <span className="title">MATERIAL UI & FIGMA DESIGNS</span>
                <div className="skill-bar">
                    <span className="skill-per">
-                       <b className="figma">65%</b>
+                       <b className="figma">75%</b>
                    </span>
                </div>
                
