@@ -19,7 +19,7 @@ function Skills () {
                <span className="title">CSS</span>
                <div className="skill-bar">
                    <span className="skill-per">
-                       <b className="css">65%</b>
+                       <b className="css">85%</b>
                    </span>
                </div>
            </div>
@@ -43,7 +43,7 @@ function Skills () {
                <span className="title">SCSS</span>
                <div className="skill-bar">
                    <span className="skill-per">
-                       <b className="scss">70%</b>
+                       <b className="scss">80%</b>
                    </span>
                </div>
            </div>
@@ -77,7 +77,7 @@ function Skills () {
                <span className="title">JAVA</span>
                <div className="skill-bar">
                    <span className="skill-per">
-                       <b className="java">50%</b>
+                       <b className="java">70%</b>
                    </span>
                </div>
                
@@ -87,7 +87,7 @@ function Skills () {
                <span className="title">MATERIAL UI & FIGMA DESIGNS</span>
                <div className="skill-bar">
                    <span className="skill-per">
-                       <b className="figma">55%</b>
+                       <b className="figma">65%</b>
                    </span>
                </div>
                
