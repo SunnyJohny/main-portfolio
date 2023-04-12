@@ -18,7 +18,7 @@ export const featuredPortfolio = [
     desc: "A simple Retaurant Landing Page",
 
     Link: "https://teaplusrestaurantlandingpage.netlify.app",
-    GitHub: "https://github.com",
+    GitHub: "https://github.com/SunnyJohny/Restaurant-Landing-Page.git",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ export const featuredPortfolio = [
     desc: "A Simple Todo app  that helps you keep track of tasks and activities that need to be completed.",
 
     Link: "https://taskmanagertodo.netlify.app/",
-    GitHub: "https://github.com",
+    GitHub: "https://github.com/SunnyJohny/Task_Manager_WebApp.git",
   },
   {
     id: 4,

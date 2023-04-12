@@ -14,11 +14,11 @@ function ProjectDisplay({ project }) {
   project = featuredPortfolio[id];
   const nothing = "";
 
-  const goToContact = () => {
-    alert(
-      "Please You will want to Contact me, if you need to access to my Github Repository Thank You."
-    );
-  };
+  // const goToContact = () => {
+  //   alert(
+  //     "Please You will want to Contact me, if you need to access to my Github Repository Thank You."
+  //   );
+  // };
 
   return (
     <div className="projectDisplay">
@@ -53,10 +53,11 @@ function ProjectDisplay({ project }) {
               </h3>
             </a>
             <a
-              onClick={goToContact}
+              // onClick={goToContact}
               class="social-icon-link github"
-              // href={project.GitHub}
-              href="/contact"
+              href={project.GitHub}
+              // href="/contact"
+              
               target="_blank"
               rel="noreferrer"
               aria-label="Github"
