@@ -67,7 +67,7 @@ export default function Contact() {
             aria-label="Github"
           >
             <LinkedInIcon style={{ fontSize: "40px", color: "#1DFC5C" }} />
-            <b>https://www.linkedin.com/in/john-sunday-193b069b</b>
+            <b>cd </b>
           </a>
         </div>
         <div className="right">
