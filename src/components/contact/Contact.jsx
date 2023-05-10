@@ -43,8 +43,6 @@ export default function Contact() {
       </div>
       <div className="container" id="container">
         <div className="left">
-          {/* <h4 className="inTouch">Get in touch</h4> */}
-
           <div className="socials">
             <PhoneEnabledIcon style={{ fontSize: "40px", color: "#1DFC5C" }} />
             <b>+2348030611606</b>
@@ -83,7 +81,6 @@ export default function Contact() {
               rows="10"
             ></textarea>
             <button type="submit">Send</button>
-            {/* <button className="hire" ><span >Hire me</span> </button> */}
           </form>
         </div>
       </div>
