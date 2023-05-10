@@ -76,11 +76,13 @@
         display: flex;
 
         align-items: center;
+        overflow-x: scroll;
 
-        column-gap: 20px;
+
+        // column-gap: 20px;
         background-color: rgba(212, 242, 153, 0.793);
         height: 60%;
-        width: 70%;
+        width: 90%;
         border-radius: 20px;
         padding-top: 25px;
         padding-left: 10px;
@@ -91,9 +93,10 @@
 
         @include mobile {
           height: 30%;
-          width: 60%;
+          width: 96%;
+          // overflow-x: scroll;
           margin-bottom: 10px;
-          padding: 20px;
+          padding: 20px 10px ;
         }
       }
     }

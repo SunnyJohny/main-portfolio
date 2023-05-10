@@ -56,6 +56,7 @@ export default function Contact() {
           >
             <EmailIcon style={{ fontSize: "40px", color: "#1DFC5C" }} />
             <b>johnsunday803@gmail.com</b>
+            
           </a>
           <a
             className="socials"
@@ -65,7 +66,7 @@ export default function Contact() {
             aria-label="Github"
           >
             <LinkedInIcon style={{ fontSize: "40px", color: "#1DFC5C" }} />
-            <b>cd </b>
+            <b>LinkedIn </b>
           </a>
         </div>
         <div className="right">
