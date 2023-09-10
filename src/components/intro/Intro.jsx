@@ -14,7 +14,7 @@ const Intro = () => {
       showCursor: true,
       backDelay: 1500,
       backSpeed: 60,
-      strings: ["A Web Developer", "A Freelancer", "An App Developer"],
+      strings: [ "A Fullstack Developer" "Web Developer", "A Freelancer", "A Desktop App Developer", "A Mobile App Developer"],
     });
   }, []);
 
